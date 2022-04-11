@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+
+namespace ASPTest;
+
+define('APP_URL', __DIR__);
+
+require APP_URL . '/vendor/autoload.php';
+
+use ASPTest\Commands\UserCreateCommand;
+use ASPTest\Commands\UserPassCreateCommand;
+use ASPTest\Commands\MigrateDBCommand;
+use ASPTest\config\env;
+use Symfony\Component\Console\Application;
+
+env::load();
+$app = new Application();
+
+$app->add(new MigrateDBCommand());
+$app->add(new UserCreateCommand());
+$app->add(new UserPassCreateCommand());
+
+$app->run();

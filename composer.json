@@ -1,0 +1,26 @@
+{
+  "name": "altersolutions/asp-test",
+  "autoload": {
+    "psr-4": {
+      "ASPTest\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "André Siqueira",
+      "email": "siqueira.andre@gmail.com"
+    }
+  ],
+  "scripts": {
+    "test": "./vendor/bin/phpunit --colors"
+  },
+  "require": {
+    "symfony/console": "^5.3",
+    "symfony/dotenv": "^5.3",
+    "polarising/bcrypt": "^1.0",
+    "ext-pdo": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9"
+  }
+}
