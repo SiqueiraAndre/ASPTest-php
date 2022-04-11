@@ -1,4 +1,4 @@
-# ASPTest - Desafio PHP - Alter Solutions
+# ASPTest - Challenge PHP - Alter Solutions
 
 > Test project requested by Alter Solutions for PHP job vacancy
 
